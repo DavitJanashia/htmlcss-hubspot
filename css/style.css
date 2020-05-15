@@ -361,6 +361,14 @@ aside.column.lvl3.ten, aside.column.lvl3.eleven, aside.column.lvl3.twelve, aside
   background-color: red;
 }
 
+div.container-ul.six{
+
+}
+
+ul.vertical-ul.one, ul.vertical-ul.two, ul.vertical-ul.three, ul.vertical-ul.four{
+  list-style-type: none;
+}
+
 aside.column.lvl4.one, aside.column.lvl4.two, aside.column.lvl4.three, aside.column.lvl4.four{
   width: calc(100% / 4);
   /* DEBUG:  */
