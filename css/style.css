@@ -4,13 +4,17 @@
   box-sizing: border-box;
   margin:0;
   /* DEBUG:  */
-  /* border:1px solid black;
-  padding:5px; */
+  border:1px solid black;
+  /* padding:5px; */
   font-family: arial;
 }
 
 
 /* REGOLE GENERALI > spazi tra gli elementi (margin, padding..) */
+
+li{
+  margin-right: 15px;
+}
 
 
 /* REGOLE DI GRIGLIA */
@@ -107,6 +111,7 @@ section.row.lvl1.one{
 
 section.row.lvl2.two{
   height: 91px;
+  background-color: WHITE;
 }
 
 section.row.lvl3.one{
@@ -114,11 +119,7 @@ section.row.lvl3.one{
   margin: auto;
 }
 
-div.logo.header{
-  /* DEBUG:  */
-  width: 150px;
-  height: 91px;
-}
+
 
 
 
@@ -480,4 +481,18 @@ margin-right: 10px;
 
 li.horizontal-li.orange{
   list-style-type: none;
+}
+
+
+
+
+/* CONTENUTO */
+
+div.logo.header{
+  width: 120px;
+  height: 91px;
+  background-image: url('../img/logo.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:100%;
 }
