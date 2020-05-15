@@ -4,8 +4,8 @@
   box-sizing: border-box;
   margin:0;
   /* DEBUG:  */
-  border:1px solid black;
-  padding:3px;
+  /* border:1px solid black;
+  padding:5px; */
   font-family: arial;
   color:#33475b;
 }
@@ -32,32 +32,36 @@ section.row.lvl4.one > *{
 
 a{
   text-decoration: none;
+  font-size: 0.8em;
+  display: inline-block;
 }
+
 a.grey{
-  font-size: 14px;
   color: #32495b;
 }
 
 a.button-link.orange{
-  /* DEBUG:  */
-  display: inline-block;
-  font-size: 0.7em;
-  padding: 10px;
   color:white;
-  border:none;
+  border:1px solid #fe775a;
   border-radius: 3px;
   background-color: #fe775a;
 }
 
 a.button-link.white{
-  /* DEBUG:  */
-  display: inline-block;
-  font-size: 0.7em;
-  padding: 10px;
   color:#fe775a;
   border:1px solid #fe775a;
   border-radius: 3px;
 }
+
+a.button-link.big{
+  padding: 18px 35px;
+}
+
+a.little{
+  padding: 10px;
+}
+
+
 
 p{
   font-size: 0.9em;
@@ -71,6 +75,14 @@ h2{
 
 h3{
   font-size: 2em;
+}
+
+h4{
+  font-size: 1.5em;
+}
+
+h5{
+  font-size: 1.2em;
 }
 
 section.row::after{
@@ -186,12 +198,15 @@ section.row.lvl3.four{
   background-color: white;
   box-shadow: 0 0 6px #c6d4e5;
   /* DEBUG:  */
-  min-height:150px;
+  min-height:330px;
 }
 
 section.row.lvl3.five{
   width: 80%;
   margin: auto;
+  margin-top:50px;
+  margin-bottom: 50px;
+  text-align: center;
 }
 
 
@@ -250,6 +265,7 @@ section.row.lvl4.one{
 section.row.lvl4.twelve{
   text-align: center;
 }
+
 
 
 
@@ -436,16 +452,14 @@ ul.vertical-ul.one, ul.vertical-ul.two, ul.vertical-ul.three, ul.vertical-ul.fou
   list-style-type: none;
 }
 
-li.horizontal-li.orange::before{
-font-size: 0.8em;
-content: "!C!";
-color:orange;
-margin-left: -20px;
-margin-right: 10px;
+ul.vertical-ul.orange{
+  text-align: left;
 }
+
 
 li.horizontal-li.orange{
   list-style-type: none;
+  color:orange;
 }
 
 
@@ -478,10 +492,10 @@ div.image-body.one{
   background-repeat: no-repeat;
 }
 
-div.image-body.two{
+div.image-body.little{
   margin: auto;
-  width: 100px;
-  height:100px;
+  width: 120px;
+  height:120px;
   background-image: url('../img/CRM-Illustration.svg');
   background-size: contain;
   background-position: center;
