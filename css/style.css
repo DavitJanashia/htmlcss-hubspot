@@ -1,0 +1,377 @@
+/* REGOLE GENERALI */
+/* backgroundis feris micema yvela im elements romeltac saerto maxasiateblebi mivaniche */
+
+*{
+  box-sizing: border-box;
+  margin:0;
+  /* DEBUG:  */
+  border:1px solid black;
+  padding:5px;
+  font-family: arial;
+}
+
+
+/* REGOLE GENERALI > spazi tra gli elementi (margin, padding..) */
+
+
+/* REGOLE DI GRIGLIA */
+            /* POSIZIONAMENTO regole generali*/
+
+.row {
+  /* deve occupare sempre tutta larghezza del contenitore padre, QUINDI NON POSSO USARE PER GLI ELEMENTI CHE AVRANNO QUALCOSA ACCANTO */
+  width: 100%;
+  position: relative;
+}
+
+
+
+section.row::after{
+content: '';
+display: table;
+clear: both;
+}
+
+ul.horizontal-ul{
+  padding:0;
+}
+
+
+
+aside.column{
+  /* QUESTION: sempre?? */
+  float: left;
+}
+
+              /* RIGHE */
+
+section.row.lvl1.zero{
+  height: 84px;
+  top:0;
+  left:0;
+  position: fixed;
+  z-index: 1;
+}
+
+nav.row.lvl1.zero{
+  width:80%;
+  height: 100%;
+  margin: auto;
+  /* DEBUG:  */
+  background-color: red;
+}
+
+
+div.container-ul.one{
+  position: absolute;
+  top:50%;
+  left:0;
+  transform: translatey(-50%);
+}
+
+ul.horizontal-ul::after{
+ content: '';
+ display: table;
+ clear: both;
+}
+
+ul.horizontal-ul li.horizontal-li{
+  display: inline-block;
+  float: left;
+}
+
+div.container-ul.two{
+  position: absolute;
+  top:50%;
+  right:0;
+  transform: translatey(-50%);
+}
+
+
+
+
+section.row.lvl1.one{
+  height: auto;
+  padding-top: 77px;
+}
+
+
+section.row.lvl2.two{
+  height: 91px;
+}
+
+section.row.lvl3.one{
+  width: 80%;
+  margin: auto;
+}
+
+div.logo.header{
+  /* DEBUG:  */
+  width: 150px;
+  height: 91px;
+}
+
+div.container-ul.three{
+  position: absolute;
+  top:50%;
+  right:0;
+  transform: translatey(-50%);
+}
+
+section.row.lvl2.three{
+  height: 747px;
+}
+
+section.row.lvl3.two{
+  width:80%;
+  margin: auto;
+}
+
+section.row.lvl4.one{
+  max-width:50%;
+}
+
+
+section.row.lvl1.two{
+  height: auto;
+}
+
+section.row.lvl2.four{
+  /* DEBUG:  */
+}
+
+section.row.lvl3.three{
+  width: 70%;
+  text-align: center;
+  margin: auto;
+}
+
+
+section.row.lvl2.five{
+
+}
+
+section.row.lvl3.four{
+  width: 80%;
+  margin: auto;
+}
+
+
+section.row.lvl2.six{
+
+}
+
+section.row.lvl3.five{
+  width: 80%;
+  margin: auto;
+}
+
+
+
+section.row.lvl1.three{
+  height: auto;
+}
+
+section.row.lvl2.seven{
+  text-align: center;
+}
+
+section.row.lvl3.six{
+  width: 80%;
+  margin: auto;
+}
+
+
+
+section.row.lvl2.eight{
+}
+
+section.row.lvl3.seven{
+  width: 80%;
+  margin: auto;
+}
+
+
+
+
+
+section.row.lvl1.four{
+  height: auto;
+}
+
+section.row.lvl2.nine{
+
+}
+
+section.row.lvl3.eight{
+  width: 70%;
+  margin: auto;
+}
+
+section.row.lvl2.ten{
+
+}
+
+section.row.lvl3.nine{
+  width: 80%;
+  margin: auto;
+}
+
+
+
+
+section.row.lvl1.five{
+  height: auto;
+}
+
+section.row.lvl2.eleven{
+
+}
+
+section.row.lvl3.ten{
+  width: 80%;
+  margin: auto;
+}
+
+section.row.lvl2.twelve{
+
+}
+
+section.row.lvl3.eleven{
+  width: 80%;
+  margin: auto;
+  /* DEBUG:  */
+  height: 50px;
+}
+
+div.container-ul.four{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+
+section.row.lvl2.thirteen{
+
+}
+
+section.row.lvl3.twelve{
+  width: 80%;
+  margin: auto;
+  /* DEBUG:  */
+  height: 50px;
+}
+
+div.logo.footer{
+  position: absolute;
+  top:50%;
+  left:0;
+  transform: translatey(-50%);
+}
+
+div.container-ul.five{
+  position: absolute;
+  top:50%;
+  right:0;
+  transform: translatey(-50%);
+}
+
+
+
+
+section.row.lvl1{
+  /* DEBUG:  */
+  background-color: green;
+}
+
+section.row.lvl2{
+  /* DEBUG:  */
+  background-color: yellow;
+}
+
+
+
+              /* COLONNE */
+
+aside.column.lvl3.one{
+  /* DEBUG:  */
+  background-color: red;
+  width: 20%;
+  height: 250px;
+}
+
+aside.column.lvl3.two{
+  /* DEBUG:  */
+  background-color: red;
+  width: 80%;
+  height: 250px;
+}
+
+aside.column.lvl3.three{
+  /* DEBUG:  */
+  background-color: red;
+  width: calc(100% / 3);
+  height: 250px;
+}
+
+aside.column.lvl3.four{
+  /* DEBUG:  */
+  background-color: red;
+  width: calc(100% / 3);
+  height: 250px;
+}
+
+aside.column.lvl3.five{
+  /* DEBUG:  */
+  background-color: red;
+  width: calc(100% / 3);
+  height: 250px;
+}
+
+aside.column.lvl3.six{
+  width: 20%;
+  /* DEBUG:  */
+  background-color: red;
+  height: 250px;
+}
+
+aside.column.lvl3.seven{
+  width: 80%;
+  /* DEBUG:  */
+  background-color: red;
+  height: 250px;
+}
+
+aside.column.lvl3.eight{
+  width: 50%;
+  /* DEBUG:  */
+  background-color: red;
+  height: 250px;
+}
+
+aside.column.lvl3.nine{
+  width: 50%;
+  /* DEBUG:  */
+  background-color: red;
+  height: 250px;
+}
+
+aside.column.lvl3.ten, aside.column.lvl3.eleven, aside.column.lvl3.twelve, aside.column.lvl3.thirteen{
+  width: calc(100% / 4);
+  /* DEBUG:  */
+  height: 280px;
+  background-color: red;
+}
+
+aside.column.lvl4.one, aside.column.lvl4.two, aside.column.lvl4.three, aside.column.lvl4.four{
+  width: calc(100% / 4);
+  /* DEBUG:  */
+  height: 80px;
+  background-color: red;
+}
+
+aside.column.lvl4.five, aside.column.lvl4.six, aside.column.lvl4.seven, aside.column.lvl4.eight{
+  width: calc(100% / 4);
+  /* DEBUG:  */
+  height: 80px;
+  background-color: red;
+}
