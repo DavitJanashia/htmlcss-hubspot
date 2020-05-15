@@ -152,6 +152,8 @@ section.row.lvl2.five{
 section.row.lvl3.four{
   width: 80%;
   margin: auto;
+  /* DEBUG:  */
+  min-height:150px;
 }
 
 
@@ -204,6 +206,8 @@ section.row.lvl2.nine{
 section.row.lvl3.eight{
   width: 70%;
   margin: auto;
+  /* DEBUG:  */
+  min-height: 210px;
 }
 
 section.row.lvl2.ten{
@@ -213,6 +217,8 @@ section.row.lvl2.ten{
 section.row.lvl3.nine{
   width: 80%;
   margin: auto;
+  /* DEBUG:  */
+  min-height: 220px;
 }
 
 
@@ -294,28 +300,34 @@ aside.column.lvl3.one{
   /* DEBUG:  */
   background-color: red;
   width: 20%;
-  height: 250px;
+
+  position:absolute;
+  top:50%;
+  left:0;
+  transform:translatey(-50%);
 }
 
 aside.column.lvl3.two{
   /* DEBUG:  */
   background-color: red;
   width: 80%;
-  height: 250px;
+
+  position:absolute;
+  top:50%;
+  right:0;
+  transform: translatey(-50%);
 }
 
 aside.column.lvl3.three{
   /* DEBUG:  */
   background-color: red;
   width: 30%;
-  height: 250px;
 }
 
 aside.column.lvl3.four{
   /* DEBUG:  */
   background-color: red;
   width: 30%;
-  height: 250px;
   margin: 0 5%;
 }
 
@@ -323,41 +335,56 @@ aside.column.lvl3.five{
   /* DEBUG:  */
   background-color: red;
   width: 30%;
-  height: 250px;
 }
 
 aside.column.lvl3.six{
   width: 20%;
   /* DEBUG:  */
   background-color: red;
-  height: 250px;
+
+  position: absolute;
+  top:50%;
+  left:0;
+  transform: translatey(-50%);
 }
 
 aside.column.lvl3.seven{
   width: 80%;
   /* DEBUG:  */
   background-color: red;
-  height: 250px;
+
+  position: absolute;
+  top:50%;
+  right:0;
+  transform: translatey(-50%);
 }
 
 aside.column.lvl3.eight{
   width: 50%;
   /* DEBUG:  */
   background-color: red;
-  height: 250px;
+
+  position: absolute;
+  top:50%;
+  left:0;
+  transform: translatey(-50%);
 }
 
 aside.column.lvl3.nine{
   width: 50%;
   /* DEBUG:  */
   background-color: red;
-  height: 250px;
+  height:200px;
+
+  position: absolute;
+  top:50%;
+  right:0;
+  transform: translatey(-50%);
 }
 
 aside.column.lvl3.ten, aside.column.lvl3.eleven, aside.column.lvl3.twelve, aside.column.lvl3.thirteen{
   width: calc(100% / 4);
   /* DEBUG:  */
-  height: 280px;
   background-color: red;
 }
 
@@ -372,14 +399,12 @@ ul.vertical-ul.one, ul.vertical-ul.two, ul.vertical-ul.three, ul.vertical-ul.fou
 aside.column.lvl4.one, aside.column.lvl4.two, aside.column.lvl4.three, aside.column.lvl4.four{
   width: calc(100% / 4);
   /* DEBUG:  */
-  height: 80px;
   background-color: red;
 }
 
 aside.column.lvl4.five, aside.column.lvl4.six, aside.column.lvl4.seven, aside.column.lvl4.eight{
   width: calc(100% / 4);
   /* DEBUG:  */
-  height: 80px;
   background-color: red;
 }
 
