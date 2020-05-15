@@ -1,5 +1,4 @@
 /* REGOLE GENERALI */
-/* backgroundis feris micema yvela im elements romeltac saerto maxasiateblebi mivaniche */
 
 *{
   box-sizing: border-box;
@@ -289,7 +288,6 @@ section.row.lvl2{
 }
 
 
-
               /* COLONNE */
 
 aside.column.lvl3.one{
@@ -309,21 +307,22 @@ aside.column.lvl3.two{
 aside.column.lvl3.three{
   /* DEBUG:  */
   background-color: red;
-  width: calc(100% / 3);
+  width: 30%;
   height: 250px;
 }
 
 aside.column.lvl3.four{
   /* DEBUG:  */
   background-color: red;
-  width: calc(100% / 3);
+  width: 30%;
   height: 250px;
+  margin: 0 5%;
 }
 
 aside.column.lvl3.five{
   /* DEBUG:  */
   background-color: red;
-  width: calc(100% / 3);
+  width: 30%;
   height: 250px;
 }
 
@@ -370,6 +369,20 @@ aside.column.lvl4.one, aside.column.lvl4.two, aside.column.lvl4.three, aside.col
 }
 
 aside.column.lvl4.five, aside.column.lvl4.six, aside.column.lvl4.seven, aside.column.lvl4.eight{
+  width: calc(100% / 4);
+  /* DEBUG:  */
+  height: 80px;
+  background-color: red;
+}
+
+aside.column.lvl4.nine, aside.column.lvl4.ten, aside.column.lvl4.eleven, aside.column.lvl4.twelve{
+  width: calc(100% / 4);
+  /* DEBUG:  */
+  height: 80px;
+  background-color: red;
+}
+
+aside.column.lvl4.thirteen, aside.column.lvl4.fourteen, aside.column.lvl4.fifteen, aside.column.lvl4.sixteen{
   width: calc(100% / 4);
   /* DEBUG:  */
   height: 80px;
