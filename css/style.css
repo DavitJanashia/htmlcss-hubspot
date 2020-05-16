@@ -92,7 +92,7 @@ h4{
 }
 
 h5{
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 
 h6{
@@ -297,6 +297,18 @@ section.row.lvl4.twelve{
   text-align: center;
 }
 
+section.row.lvl4.fifteen{
+  min-height: 58px;
+}
+
+section.row.lvl4.seventeen, section.row.lvl4.nineteen, section.row.lvl4.twenty-one{
+  padding:20px 20px;
+}
+
+section.row.lvl5.seven, section.row.lvl5.thirteen, section.row.lvl5.nineteen{
+  border-bottom: 1px solid grey;
+}
+
 
 
 
@@ -387,9 +399,6 @@ aside.column.lvl3.nine{
   background-repeat: no-repeat;
   background-position: center;
   /* DEBUG:  */
-
-
-
   position: absolute;
   top:50%;
   right:0;
@@ -398,38 +407,45 @@ aside.column.lvl3.nine{
 
 aside.column.lvl3.ten, aside.column.lvl3.eleven, aside.column.lvl3.twelve, aside.column.lvl3.thirteen{
   width: calc(100% / 4);
-  /* DEBUG:  */
-
 }
-
-
-
 
 
 aside.column.lvl4.one, aside.column.lvl4.two, aside.column.lvl4.three, aside.column.lvl4.four{
   width: calc(100% / 4);
-  /* DEBUG:  */
-
 }
 
 aside.column.lvl4.five, aside.column.lvl4.six, aside.column.lvl4.seven, aside.column.lvl4.eight{
   width: calc(100% / 4);
-  /* DEBUG:  */
-
 }
 
 aside.column.lvl4.nine, aside.column.lvl4.ten, aside.column.lvl4.eleven, aside.column.lvl4.twelve{
   width: calc(100% / 4);
   /* DEBUG:  */
   height: 80px;
-
 }
 
 aside.column.lvl4.thirteen, aside.column.lvl4.fourteen, aside.column.lvl4.fifteen, aside.column.lvl4.sixteen{
   width: calc(100% / 4);
   /* DEBUG:  */
   height: 80px;
+}
 
+aside.column.lvl4.seventeen{
+  width: 25%;
+  margin-right: 5%;
+  position: absolute;
+  top:50%;
+  left:0;
+  transform: translatey(-50%);
+}
+
+aside.column.lvl4.eighteen{
+  width: 70%;
+  height: 50%;
+  position: absolute;
+  top:0;
+  right:0;
+  border-bottom: 1px solid grey;
 }
 
 
@@ -495,9 +511,11 @@ ul.vertical-ul.orange{
 
 li.horizontal-li.orange{
   list-style-type: none;
-  color:orange;
 }
 
+i.fas.fa-check-circle{
+  color: #fe775a;
+}
 
 /* CONTENUTO */
 
@@ -532,10 +550,25 @@ div.image-body.little{
   margin: auto;
   width: 120px;
   height:120px;
-  background-image: url('../img/CRM-Illustration.svg');
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+div.image-body.two{
+  background-image: url('../img/CRM-Illustration.svg');
+}
+
+div.image-body.three{
+  background-image: url('../img/Marketing-Hub-Free.svg');
+}
+
+div.image-body.four{
+  background-image: url('../img/Sales-Professional-Illustration.svg');
+}
+
+div.image-body.five{
+  background-image: url('../img/Service-Hub-Illustration.svg');
 }
 
 a#search-button{
@@ -547,5 +580,5 @@ a#search-button{
 
 footer{
   background-color: #32495b;
-  padding: 30px 0 40px 0; 
+  padding: 30px 0 40px 0;
 }
