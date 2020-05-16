@@ -4,8 +4,8 @@
   box-sizing: border-box;
   margin:0;
   /* DEBUG:  */
-  /* border:1px solid black;
-  padding:5px; */
+  border:1px solid black;
+  padding:5px;
   font-family: arial;
   color:#33475b;
 }
@@ -17,6 +17,13 @@ li{
   margin-right: 15px;
 }
 
+section.row.lvl5.six, section.row.lvl5.twelve,section.row.lvl5.eighteen{
+  padding: 25px 0 30px;
+}
+
+section.row.lvl5.eight, section.row.lvl5.fourteen, section.row.lvl5.twenty{
+  padding: 35px;
+}
 
 /* REGOLE DI GRIGLIA */
             /* POSIZIONAMENTO regole generali*/
@@ -90,7 +97,6 @@ a.little{
 
 p{
   font-size: 0.9em;
-  padding:25px 0;
   line-height: 1.7em;
 }
 
@@ -285,8 +291,7 @@ section.row.lvl3.four{
   margin: auto;
   background-color: white;
   box-shadow: 0 0 6px #c6d4e5;
-  /* DEBUG:  */
-  min-height:330px;
+  padding:70px 80px;
 }
 
 section.row.lvl3.five{
@@ -361,7 +366,8 @@ section.row.lvl4.fifteen{
 }
 
 section.row.lvl4.seventeen, section.row.lvl4.nineteen, section.row.lvl4.twenty-one{
-  padding:20px 20px;
+  border-bottom: 2px solid grey;
+  height: 60%;
 }
 
 section.row.lvl4.twenty-eight i{
@@ -373,7 +379,12 @@ section.row.lvl4.twenty-eight i{
 
 
 section.row.lvl5.seven, section.row.lvl5.thirteen, section.row.lvl5.nineteen{
-  border-bottom: 1px solid grey;
+  padding-bottom: 60px;
+}
+
+section.row.lvl5.nine, section.row.lvl5.fifteen, section.row.lvl5.twenty-one{
+  text-align: left;
+  padding-bottom: 35px;
 }
 
 
@@ -385,45 +396,35 @@ section.row.lvl5.seven, section.row.lvl5.thirteen, section.row.lvl5.nineteen{
               /* COLONNE */
 
 aside.column.lvl3.one{
-  /* DEBUG:  */
   width: 20%;
-  position:absolute;
-  top:50%;
-  left:0;
-  transform:translatey(-50%);
 }
 
 aside.column.lvl3.two{
-  /* DEBUG:  */
-  width: 80%;
-
-  position:absolute;
-  top:50%;
-  right:0;
-  transform: translatey(-50%);
+  width: 75%;
+  margin-left: 5%;
 }
 
 aside.column.lvl3.three{
-  /* DEBUG:  */
   background-color: white;
   width: 30%;
   background-color: white;
   box-shadow: 0 0 6px #c6d4e5;
+  padding: 20px 40px;
 }
 
 aside.column.lvl3.four{
-  /* DEBUG:  */
   width: 30%;
   margin: 0 5%;
   background-color: white;
   box-shadow: 0 0 6px #c6d4e5;
+  padding: 20px 40px;
 }
 
 aside.column.lvl3.five{
-  /* DEBUG:  */
   width: 30%;
   background-color: white;
   box-shadow: 0 0 6px #c6d4e5;
+  padding: 20px 40px;
 }
 
 aside.column.lvl3.six{
@@ -544,8 +545,7 @@ aside.column.lvl4.sixteen{
 }
 
 aside.column.lvl4.seventeen{
-  width: 25%;
-  margin-right: 5%;
+  width: 30%;
   position: absolute;
   top:50%;
   left:0;
@@ -558,7 +558,6 @@ aside.column.lvl4.eighteen{
   position: absolute;
   top:0;
   right:0;
-  border-bottom: 1px solid grey;
 }
 
 
@@ -605,27 +604,23 @@ div.container-ul.five{
   float: right;
 }
 
-div.container-ul.six{
-}
-
-div.container-ul.ten{
-}
-
 ul.vertical-ul.one, ul.vertical-ul.two, ul.vertical-ul.three, ul.vertical-ul.four{
   list-style-type: none;
 }
 
 ul.vertical-ul.orange{
-  text-align: left;
+  padding:0;
 }
 
 
 li.horizontal-li.orange{
   list-style-type: none;
+  text-align: left;
 }
 
 i.fas.fa-check-circle{
   color: #fe775a;
+  padding-right:15px;
 }
 
 /* CONTENUTO */
@@ -642,8 +637,8 @@ div.logo.header{
 
 div.image-body.one{
   margin: auto;
-  width: 200px;
-  height:200px;
+  width: 250px;
+  height:250px;
   background-image: url('../img/cube.png');
   background-size: contain;
   background-position: center;
@@ -651,10 +646,19 @@ div.image-body.one{
   background-repeat: no-repeat;
 }
 
+div.image-body.medium{
+  margin: auto;
+  width: 130px;
+  height:130px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 div.image-body.little{
   margin: auto;
-  width: 120px;
-  height:120px;
+  width: 100px;
+  height:100px;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -720,4 +724,27 @@ div#logo-footer-box{
 a#logo-footer-link{
   width: 105px;
   height: 60px;
+}
+
+div.line{
+  width: 80%;
+  height: 100%;
+  border-bottom: 2px solid grey;
+}
+
+section.row.lvl4.fourteen p{
+  width: 80%;
+  padding-top:30px;
+}
+
+section.row.lvl4.four p{
+  padding: 20px 0 50px 0;
+}
+
+section.row.lvl5.two p{
+  padding: 30px 0;
+}
+
+section.row.lvl5.four p{
+  padding-top: 30px;
 }
