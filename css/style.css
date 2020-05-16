@@ -45,7 +45,7 @@ a#language-choose-id i.fas.fa-chevron-down{
   font-size: 1em;
 }
 a#language-choose-id i.fas.fa-globe-europe{
-  font-size: 1.3em;  
+  font-size: 1.3em;
 }
 
 a{
@@ -239,12 +239,20 @@ section.row.lvl2.two{
   height: 91px;
   background-color: WHITE;
 }
-
 section.row.lvl2.three{
+background-image: linear-gradient(to top right,#fef8f0,#fff3ee,#fff1ee);
+border-bottom: 3px solid #33475b;
+position: relative;
+box-shadow: inset 0 11px 8px -10px rgba(51,71,91,0.12);
+font-size: 16px;
+}
+
+section.row.background-try{
   height: 747px;
-  background-image: url('../IMG/JUMBOTRON.png');
+  background-image: url('https://www.hubspot.com/hubfs/raw_assets/public/_Web%20Team%20Assets/Website/assets/hero.svg');
   background-size:cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 section.row.lvl2.seven{
