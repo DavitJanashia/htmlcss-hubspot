@@ -3,11 +3,11 @@
 *{
   box-sizing: border-box;
   margin:0;
+  font-family: arial;
+  color:#33475b;
   /* DEBUG:  */
   /* border:1px solid black;
   padding:5px; */
-  font-family: arial;
-  color:#33475b;
 }
 
 
@@ -173,12 +173,9 @@ aside.column{
 
 
 footer * :not(h6){
-  color: #dadee0;
+  color: #becad7;
+  font-size: 1em;
 }
-
-/* footer{
-  text-align: center;
-} */
 
 footer ul{
   padding: 0;
@@ -334,6 +331,14 @@ section.row.lvl3.ten{
   margin: auto;
 }
 
+section.row.lvl3.ten > * > * > * > *{
+  padding-bottom:15px;
+}
+
+section.row.lvl3.ten > * > * > *{
+  padding-top:25px;
+}
+
 section.row.lvl3.eleven{
   width: 80%;
   margin: auto;
@@ -456,7 +461,7 @@ aside.column.lvl3.eight{
 }
 
 aside.column.lvl3.eight > *{
-  padding-bottom: 30px;
+  padding-top: 30px;
 }
 
 aside.column.lvl3.nine{
@@ -475,7 +480,10 @@ aside.column.lvl3.nine{
 
 aside.column.lvl3.ten, aside.column.lvl3.eleven, aside.column.lvl3.twelve, aside.column.lvl3.thirteen{
   width: calc(100% / 4);
+  padding-right: 30px;
+  padding-left: 30px;
 }
+
 
 
 aside.column.lvl4.one, aside.column.lvl4.two, aside.column.lvl4.three, aside.column.lvl4.four{
@@ -619,6 +627,7 @@ div.container-ul.four{
 div.container-ul.five{
   display: inline-block;
   float: right;
+  padding-top: 40px;
 }
 
 ul.vertical-ul.one, ul.vertical-ul.two, ul.vertical-ul.three, ul.vertical-ul.four{
@@ -639,6 +648,17 @@ i.fas.fa-check-circle{
   color: #fe775a;
   padding-right:15px;
 }
+
+
+div.container-ul.three .horizontal-ul i{
+  padding-left:12px;
+}
+
+div.container-ul.three .horizontal-ul a{
+  padding-right: 12px;
+}
+
+
 
 /* CONTENUTO */
 
@@ -717,7 +737,7 @@ a#search-button{
 
 footer{
   background-color: #32495b;
-  padding: 30px 0 40px 0;
+  padding: 40px 0 40px 0;
 }
 
 a#button-link-footer{
