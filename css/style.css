@@ -185,6 +185,34 @@ a.button-link.orange{
   background-color: #fe775a;
 }
 
+li.horizontal-li{
+  position: relative;
+}
+
+div.button-link.container{
+  display: inline-block;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+div.button-link.container:hover div.hover.button-orange{
+  display:inline-block;
+}
+
+div.hover.button-orange{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  left:0;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: none;
+  }
+
+a.button-link.orange:hover div.hover.button-orange{
+  display:inline-block;
+}
+
 a.button-link.white{
   color:#fe775a;
   border:1px solid #fe775a;
@@ -392,6 +420,7 @@ section.row.lvl3.nine{
   width: 80%;
   margin: auto;
   min-height: 323px;
+  padding-left:30px;
 }
 
 section.row.lvl3.ten{
