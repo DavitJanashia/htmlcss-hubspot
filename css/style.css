@@ -183,10 +183,8 @@ a.button-link.orange{
   border:1px solid #fe775a;
   border-radius: 3px;
   background-color: #fe775a;
-}
-
-li.horizontal-li{
   position: relative;
+  font-size: 1em;
 }
 
 div.button-link.container{
@@ -194,6 +192,11 @@ div.button-link.container{
   position: relative;
   background-color: rgba(255, 255, 255, 0.5);
 }
+
+li.horizontal-li{
+  position: relative;
+}
+/* inizio HOVER BUTTON ORANGE */
 
 div.button-link.container:hover div.hover.button-orange{
   display:inline-block;
@@ -205,7 +208,7 @@ div.hover.button-orange{
   position: absolute;
   top:0;
   left:0;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.2);
   display: none;
   }
 
@@ -213,11 +216,35 @@ a.button-link.orange:hover div.hover.button-orange{
   display:inline-block;
 }
 
+
+/* fine HOVER BUTTON ORANGE */
+
+
+
 a.button-link.white{
   color:#fe775a;
   border:1px solid #fe775a;
   border-radius: 3px;
+  position: relative;
+  font-size: 1em;
 }
+
+/* inizio HOVER BUTTON WHITE */
+
+div.hover.button-white{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  left:0;
+  background-color: rgba(254, 119, 90, 0.2);
+  display: none;
+  }
+
+  a.button-link.white:hover div.hover.button-white{
+    display:inline-block;
+  }
+
 
 a.button-link.light{
   color:#32495b;
@@ -303,6 +330,18 @@ footer * :not(h6){
   font-size: 1em;
 }
 
+/* inizio HOVER footer */
+
+footer a:hover{
+  color:#81cfdb;
+}
+
+footer i:hover{
+  color:#81cfdb;
+}
+
+/* fine HOVER footer */
+
 
 
               /* RIGHE */
@@ -383,12 +422,44 @@ section.row.lvl3.three{
 
 
 section.row.lvl3.four{
+  position: relative;
+  border-radius: 5px;
   width: 80%;
   margin: auto;
   background-color: white;
   box-shadow: 0 0 6px #c6d4e5;
   padding:70px 80px;
+  /* DEBUG:  */
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
+
+/* inizio prova hover prima carta */
+section.row.lvl3.four::after{
+  content: "";
+  border-radius: 5px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+section.row.lvl3.four:hover{
+  -webkit-transform: scale(1.05, 1.05);
+ transform: scale(1.05, 1.05);
+}
+
+section.row.lvl3.four:hover::after {
+  opacity: 1;
+}
+
+/* fine prova hover prima carta */
 
 section.row.lvl3.five{
   width: 80%;
@@ -483,26 +554,72 @@ aside.column.lvl3.two{
 }
 
 aside.column.lvl3.three{
+  position: relative;
   background-color: white;
+  border-radius: 5px;
   width: 30%;
-  background-color: white;
   box-shadow: 0 0 6px #c6d4e5;
   padding: 20px 40px;
+  /* DEBUG:  */
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
+/* inizio prova hover SHADOW BOX */
+
+
+/* inizio hover tre colonne */
+aside.column.lvl3.three::after, aside.column.lvl3.four::after, aside.column.lvl3.five::after{
+  content: "";
+  border-radius: 5px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+aside.column.lvl3.three:hover, aside.column.lvl3.four:hover, aside.column.lvl3.five:hover{
+  -webkit-transform: scale(1.05, 1.05);
+ transform: scale(1.05, 1.05);
+}
+
+aside.column.lvl3.three:hover::after, aside.column.lvl3.four:hover::after, aside.column.lvl3.five:hover::after {
+    opacity: 1;
+}
+/* fine hover tre colonne */
+
+
+/* fine prova  hover SHADOW BOX*/
+
 aside.column.lvl3.four{
+  position: relative;
+  border-radius: 5px;
   width: 30%;
   margin: 0 5%;
   background-color: white;
   box-shadow: 0 0 6px #c6d4e5;
   padding: 20px 40px;
+  /* DEBUG:  */
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 aside.column.lvl3.five{
+  position: relative;
+  border-radius: 5px;
   width: 30%;
   background-color: white;
   box-shadow: 0 0 6px #c6d4e5;
   padding: 20px 40px;
+  /* DEBUG:  */
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 aside.column.lvl3.six{
